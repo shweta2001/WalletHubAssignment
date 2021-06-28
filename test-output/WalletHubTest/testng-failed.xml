@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WalletHubTest]">
+  <test thread-count="5" name="For Facebook(failed)">
+    <classes>
+      <class name="com.qa.TestCases.fbPostPageTest">
+        <methods>
+          <include name="postStatus"/>
+          <include name="loginFb"/>
+          <include name="teardown"/>
+          <include name="launchFb"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.fbPostPageTest -->
+    </classes>
+  </test> <!-- For Facebook(failed) -->
+  <test thread-count="5" name="For Wallethub(failed)">
+    <classes>
+      <class name="com.qa.TestCases.walletHubTest">
+        <methods>
+          <include name="ReviewStatus"/>
+          <include name="launchFb"/>
+          <include name="loginWalletHub"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.walletHubTest -->
+    </classes>
+  </test> <!-- For Wallethub(failed) -->
+</suite> <!-- Failed suite [WalletHubTest] -->
